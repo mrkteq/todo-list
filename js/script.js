@@ -5,7 +5,8 @@ let activeTodoItem = null;
 
 function addTodoItem() {
     if (activeTodoItem) {
-
+        activeTodoItem.innerText = todoInput.value;
+        activeTodoItem = null;
     }else{
         
     }
