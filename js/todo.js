@@ -1,7 +1,7 @@
 (function() {
     const todoList = document.getElementById("todoList"); 
     const todoInput = document.getElementById("todoInput");
-    const addButton = document.getElementById("addButton");
+    const todoButton = document.getElementById("todoButton");
     let activeTodoItem = null;
 
     function addTodo() {
@@ -33,5 +33,5 @@
       this.parentNode.remove();
     }
   
-    addButton.addEventListener("click", addTodo);
+    todoButton.addEventListener("click", addTodo);
   })();
