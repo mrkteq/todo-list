@@ -8,6 +8,8 @@
       if (activeTodoItem) {
         activeTodoItem.firstChild.textContent = todoInput.value; 
         activeTodoItem = null; 
+      }  else if (todoInput.value === "") {
+        alert("it's empty!");
       } else { 
         const newTodo = document.createElement("li");
         newTodo.innerText = todoInput.value; 
